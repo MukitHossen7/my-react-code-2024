@@ -40,3 +40,9 @@
 .read-the-docs {
   color: #888;
 }
+.postStyle {
+  border: 2px solid purple;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 15px;
+}
