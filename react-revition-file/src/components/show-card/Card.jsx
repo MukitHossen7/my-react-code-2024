@@ -1,5 +1,8 @@
 import React from "react";
-
+import dollar from "../../assets/dollar.png";
+import femenine from "../../assets/femenine.png";
+import frame from "../../assets/Frame (1).png";
+import frame2 from "../../assets/Frame.png";
 const Card = ({ pet }) => {
   const { pet_name, breed, date_of_birth, image, gender, price } = pet;
   return (
@@ -16,11 +19,24 @@ const Card = ({ pet }) => {
           <h2 className="card-title pt-4 font-bold">{pet_name}</h2>
 
           <div className="text-sm flex flex-col gap-1 py-4 text-slate-600 font-medium">
-            <img src="assets/dollar.png" />
-            <p>Price : {price} $</p>
-            <p>Breed : {breed || "Not Available"}</p>
-            <p>Date of Birth : {date_of_birth || "Not Available"}</p>
-            <p>Gender : {gender}</p>
+            <div className="flex items-center gap-1">
+              <img className="w-3" src={dollar} />
+              <p>Price : {price || "Not Available"} $</p>
+            </div>
+            <div className="flex items-center gap-1">
+              <img className="w-3" src={frame2} />
+              <p>Breed : {breed || "Not Available"}</p>
+            </div>
+
+            <div className="flex items-center gap-1">
+              <img className="w-3" src={frame} />
+              <p>Date of Birth : {date_of_birth || "Not Available"}</p>
+            </div>
+
+            <div className="flex items-center gap-1">
+              <img className="w-3" src={femenine} />
+              <p>Gender : {gender}</p>
+            </div>
           </div>
           <div className="card-actions">
             <button className="btn btn-primary px-5 py-1 font-bold">
