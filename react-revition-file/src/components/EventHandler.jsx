@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../index.css";
 
 const EventHandler = () => {
   const [count, setCount] = useState(0);
@@ -15,12 +16,19 @@ const EventHandler = () => {
     alert(mess);
   };
   return (
-    <div>
-      <h3>Count : {count}</h3>
-      <button onClick={handleAdd}>Add</button>
-      <button onClick={handleRemove}>Remove</button>
+    <div className="text-center pt-10">
+      <h3 className="text-2xl font-bold">Count : {count}</h3>
+      <div className="flex justify-center gap-4 pb-10 pt-6">
+        <button className="btn text-sky-600" onClick={handleAdd}>
+          Add
+        </button>
+        <button className="btn text-red-600" onClick={handleRemove}>
+          Remove
+        </button>
+      </div>
       <hr></hr>
       <button
+        className="btn mt-3"
         onClick={() => {
           handlePara("Hello React developer");
         }}
