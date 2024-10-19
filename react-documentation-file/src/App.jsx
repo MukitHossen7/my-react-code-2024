@@ -4,6 +4,7 @@ import MyButton from "./components/MyButton";
 import Login from "./components/Login";
 import Logout from "./components/Logout";
 import Products from "./components/products/Products";
+import Fruites from "./components/fruites/fruites";
 
 function App() {
   const [data, setData] = useState(false);
@@ -26,6 +27,8 @@ function App() {
       </button>
       <hr></hr>
       <Products products={products}></Products>
+      <hr></hr>
+      <Fruites />
     </>
   );
 }
