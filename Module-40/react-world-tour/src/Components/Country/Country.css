@@ -16,3 +16,7 @@
 .isVisited {
   background-color: red;
 }
+.flagContainer {
+  display: flex;
+  gap: 10px;
+}
