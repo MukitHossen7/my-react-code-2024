@@ -1,7 +1,18 @@
 .countryStyle {
   border: 2px solid skyblue;
-  max-width: 500px;
+
   border-radius: 20px;
   margin: 15px;
   padding: 15px;
+}
+.btn {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: chartreuse;
+  border-radius: 10px;
+}
+.isVisited {
+  background-color: red;
 }
